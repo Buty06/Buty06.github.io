@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+}
+
+main {
+  max-width: 20rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  box-shadow: 3px 3px 0px 4px black;
+}
+
+.image1 {
+  width: 100%;
+  border-radius: 15px;
+}
+
+article {
+  margin-top: 1rem;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+strong {
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+span {
+  font-weight: 600;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.figure {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+img {
+  width: 2rem;
+  margin-right: 10px;
+}
+
+figcaption {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
