@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 21rem;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.card__galery {
+  position: relative;
+  height: 19rem;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+}
+
+.card__eye-svg {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card__galery:hover .card__eye-svg {
+  opacity: 1;
+}
+
+.card__galery:hover .card__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
+  border-radius: 0.5rem;
+}
+
+.card__menu {
+  margin-top: 1rem;
+}
+
+.card__header {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card__header:hover {
+  color: hsl(178, 100%, 50%);
+  transition-duration: 0.3s;
+}
+
+.card__description {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card__logos {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card__icons {
+  height: 1em;
+}
+.card__value {
+  color: hsl(178, 100%, 50%);
+}
+
+.card__time {
+  color: hsl(215, 51%, 70%);
+}
+
+.card__line {
+  margin-top: 1.5rem;
+  opacity: 0.3;
+  height: 1px;
+}
+
+.card__user {
+  height: 2.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card__avatar {
+  height: 100%;
+  margin-right: 1rem;
+  border: white 1px solid;
+  border-radius: 50%;
+}
+
+.card__user__paragraph {
+  color: hsl(215, 51%, 70%);
+}
+
+.card__author {
+  color: hsl(0, 0%, 100%);
+  margin-right: 1px;
+}
+
+.card__author:hover {
+  color: hsl(178, 100%, 50%);
+  transition-duration: 0.3s;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 81%, 25%);
+}
