@@ -1,47 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta
+      name="description"
+      content="Frontend Mentor | Results summary component, a practice carried out by Buty using responsive among other mechanics"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <meta
+      property="og:title"
+      content="Buty | Frontend Mentor | Results summary component"
+    />
+    <meta
+      property="og:description"
+      content="Frontend Mentor | Results summary component, a practice carried out by Buty using responsive among other mechanics"
+    />
+    <meta
+      property="og:image"
+      content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxkR6fqae0ezgYuvfE2Z4iJtC0wW8rR71BQQ&s"
+    />
+    <meta property="og:image:alt" content="example for the code" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  Your Result
-  76
-  of 100
+    <title>Buty | Frontend Mentor | Results summary component</title>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <style>
+      html {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+  </head>
 
-  Reaction
-  80 / 100
+  <body>
+    <main class="main">
+      <section class="container">
+        <article class="card card__blue">
+          <h2 class="card__title">Your Result</h2>
 
-  Memory
-  92 / 100
+          <div class="card__circle">
+            <div class="card__number">76</div>
+            of 100
+          </div>
 
-  Verbal
-  61 / 100
+          <h3 class="card__subtitle">Great</h3>
 
-  Visual
-  72 / 100
+          <p class="card__paragraph">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </article>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <article class="card card__yellow">
+          <h2 class="card__title">Summary</h2>
+
+          <ul class="card__list">
+            <li class="card__items backgraund__red">
+              <span class="item__red"
+                ><img class="card__icons"
+                  src="./assets/images/icon-reaction.svg"
+                  alt="image"
+                />Reaction</span
+              >
+              <span>80 / 100</span>
+            </li>
+            <li class="card__items backgraund__yellow">
+              <span class="item__yellow"
+                ><img class="card__icons"
+                  src="./assets/images/icon-memory.svg"
+                  alt="image"
+                />Memory</span
+              ><span>92 / 100</span>
+            </li>
+            <li class="card__items backgraund__green">
+              <span class="item__green"
+                ><img class="card__icons"
+                  src="./assets/images/icon-verbal.svg"
+                  alt="image"
+                />Verbal</span
+              ><span>61 / 100</span>
+            </li>
+            <li class="card__items backgraund__blue">
+              <span class="item__blue"
+                ><img class="card__icons"
+                  src="./assets/images/icon-visual.svg"
+                  alt="image"
+                />Visual</span
+              ><span>72 / 100</span>
+            </li>
+          </ul>
+
+          <button class="card__butoon">Continue</button>
+        </article>
+      </section>
+    </main>
+
+    <footer class="low__bar">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>

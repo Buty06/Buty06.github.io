@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body {
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 15px hsl(241, 100%, 89%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card {
+  flex: 1;
+  width: 15rem;
+  min-width: 15rem;
+  height: 22rem;
+  padding: 1.5rem;
+}
+
+.card__title {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.card__blue {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__blue .card__title {
+  color: hsl(241, 100%, 89%);
+}
+
+.card__yellow {
+  background: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.card__yellow .card__title {
+  color: hsl(224, 30%, 27%);
+  text-align: start;
+}
+
+.card__circle {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  height: 8.5rem;
+  width: 8.5rem;
+  border-radius: 100%;
+  margin-bottom: 1.5remcard__butoon;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: hsl(241, 100%, 89%);
+  font-size: small;
+}
+
+.card__number{
+  font-size: 40px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+}
+
+.card__subtitle{
+  color: hsl(0, 0%, 100%);
+  margin-bottom: .7rem;
+}
+
+.card__paragraph{
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  font-size: smaller;
+}
+
+.card__list{
+  list-style: none;
+}
+
+.card__items{
+  margin: .5rem 0;
+  background-color: rgb(212, 97, 97);
+  padding: .5rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.card__icons{
+  height: 1rem;
+  margin-right: .5rem;
+}
+
+.backgraund__red{
+  background-color: hsla(0, 100%, 67%, 0.116);
+}
+
+.item__red{
+  color: hsl(0, 100%, 67%);
+}
+
+.backgraund__yellow{
+  background-color: hsla(39, 100%, 56%, 0.253);
+}
+
+.item__yellow{
+  color: hsl(39, 100%, 56%);
+}
+
+.backgraund__green{
+  background-color: hsla(166, 100%, 37%, 0.267);
+}
+
+.item__green{
+  color: hsl(166, 100%, 37%);
+}
+
+.backgraund__blue{
+  background-color: hsla(234, 85%, 45%, 0.24);
+}
+
+.item__blue{
+  color: hsl(234, 85%, 45%);
+}
+
+.card__butoon{
+  margin-top: 2rem;
+  bottom: 2rem;
+  border: 0;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  width: 11rem;
+  transition: 1s;
+}
+
+.card__butoon:hover{
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+.low__bar {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
