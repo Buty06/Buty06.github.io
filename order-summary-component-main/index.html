@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="An Order Summary Card created by Buty, a frontend development practice"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <meta
+      property="og:title"
+      content="Buty | Frontend Mentor | Order summary card"
+    />
+    <meta
+      property="og:description"
+      content="An Order Summary Card created by Buty, a frontend development practice"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dz209s6jk/image/upload/v1628187714/Challenges/ztdrvzpbcjytdo892pxx.jpg"
+    />
+    <meta property="og:image:alt" content="an example from the web" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Order Summary
+    <title>Buty | Frontend Mentor | Order summary card</title>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <style>
+      html {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+  </head>
 
-  Annual Plan
-  $59.99/year
+  <body>
+    <main class="container">
+      <section class="card">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="illustration"
+          class="card__image"
+        />
 
-  Change
+        <h2 class="card__title">Order Summary</h2>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <p class="card__paragraph">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="card__label">
+          <div class="card__plan">
+            <img
+            src="./images/icon-music.svg"
+            alt="icon-music"
+            class="card__icon"
+          />
+
+          <div class="card__space">
+            <h3 class="card__annual">Annual Plan</h3>
+
+            <p class="card__pay">$59.99/year</p>
+          </div>
+          
+          </div>
+
+          <button class="card__change">Change</button>
+        </div>
+
+        <button class="card__payment">Proceed to Payment</button>
+
+        <button class="card__cancel">Cancel Order</button>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>

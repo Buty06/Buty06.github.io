@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+}
+
+html {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100rem;
+  background-color: hsl(225, 100%, 94%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  width: 21.5rem;
+  border-radius: 1rem;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px hsl(231, 23%, 89%);
+}
+
+.card__image {
+  width: 23rem;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.card__paragraph {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icon {
+  border-radius: 100%;
+  width: 2.3rem;
+  margin-right: 0.8rem;
+}
+
+.card__annual {
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+}
+
+.card__pay {
+  font-size: 13px;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__change {
+  border: 0;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #0c0cce;
+  transition: .3s ease;
+}
+
+.card__change:hover{
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+.card__payment {
+  background-color: hsl(245, 75%, 52%);
+  border: 0;
+  color: hsl(225, 100%, 94%);
+  font-weight: 700;
+  width: 17rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 12px 12px hsl(224, 19%, 80%);
+  margin-bottom: 1.5rem;
+  transition: .3s ease;
+}
+
+.card__payment:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.card__cancel{
+    border: 0;
+    background: transparent;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    transition: .3s ease;
+}
+
+.card__cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
