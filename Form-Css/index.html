@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buty | Form-Css</title>
+    <meta name="description" content="Trying to create a form with CSS only">
+
+    <meta property="og:title" content="Buty | Form-Css">
+    <meta property="og:description" content="Trying to create a form with CSS only">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiWX9w-bkFChh2dngwyxMjM4h6g_bAJ6zlA&s">
+    <meta property="og:image:alt" content="A form">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form class="form">
+      <label class="form__containers">
+        <div>Name:</div>
+        <input
+          type="text"
+          name="name"
+          class="form__input"
+          placeholder="Enter your name"
+          required
+        />
+      </label>
+
+      <label class="form__containers">
+        <div>Email:</div>
+        <input
+          type="email"
+          name="email"
+          class="form__input"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+
+      <label class="form__containers">
+        <div>Password:</div>
+        <input
+          type="password"
+          name="password"
+          class="form__input"
+          placeholder="Enter your password"
+          required
+        />
+      </label>
+
+      <button class="form__button">Submit</button>
+    </form>
+  </body>
+</html>
