@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta
       name="description"
-      content="A Stats preview card component by Buty, design by Frontend Mentor"
+      content="Buty | Frontend Mentor | Stats preview card component, a practice for html and css"
     />
-    <meta name="theme-color" content="hsl(233, 47%, 7%)" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta
       property="og:title"
@@ -17,35 +15,13 @@
     />
     <meta
       property="og:description"
-      content="A Stats preview card component by Buty, design by Frontend Mentor"
-    />
-    <meta property="og:image" content="./images/imagen-de-meta.png" />
-    <meta property="og:image:alt" content="Image for a lot cards" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://pelicie.github.io/stats-preview-card-component-main/"
-    />
-
-    <!-- *twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="pelicie.github.io" />
-    <meta
-      property="twitter:url"
-      content="https://pelicie.github.io/blog-preview-card-main/"
+      content="Buty | Frontend Mentor | Stats preview card component, a practice for html and css"
     />
     <meta
-      name="twitter:title"
-      content="Buty | Frontend Mentor | Blog preview card"
+      property="og:image"
+      content="https://images.app.goo.gl/BfnXdAfVctjKNQCc7"
     />
-    <meta
-      name="twitter:description"
-      content="A blog preview card by Buty, design by Frontend Mentor"
-    />
-    <meta
-      name="twitter:image"
-      content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbidHkXtY72Iy94OyKoNupuLzs8GiLYDPqz-PN56yHWTRh6ImLq_vMIvAeRfeufHRpiu4&usqp=CAU"
-    />
+    <meta property="og:image:alt" content="an example image" />
 
     <link
       rel="icon"
@@ -53,47 +29,64 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Buty | Frontend Mentor | Stats preview card component</title>
   </head>
+  
   <body>
-    <main>
-      <section>
-        <picture>
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/image-header-desktop.jpg"
-          />
-          <img src="./images/image-header-mobile.jpg" alt="The primary image" />
-        </picture>
+    <section class="container">
+      <img
+        src="./images/image-header-desktop.jpg"
+        alt="image-destock"
+        class="container__image"
+      />
 
-        <article class="son">
-          <header>
-            <h2>Get insights that help your business grow.</h2>
-          </header>
+      <article class="container__content">
+        <h2 class="container__title">
+          Get <span class="container__color">insights</span> that help your business grow.
+        </h2>
 
-          <p>
-            Discover the benefits of data analytics and make better decisions
-            regarding revenue, customer experience, and overall efficiency.
-          </p>
+        <p class="container__paragraph">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
 
-          <div>
-            <div><span>10k+</span>companies</div>
-            <div><span>314</span>templates</div>
-            <div><span>12m+</span>queries</div>
+        <div class="container__objects">
+          <div class="container__oject">
+            <span class="container__numbers">10k+</span>
+            companies
           </div>
-        </article>
-      </section>
-    </main>
+          <div class="container__oject">
+            <span class="container__numbers">314</span>
+            templates
+          </div>
+          <div class="container__oject">
+            <span class="container__numbers">12m+</span>
+            queries
+          </div>
+        </div>
+      </article>
+      
+    </section>
 
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
-    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
   </body>
 </html>
