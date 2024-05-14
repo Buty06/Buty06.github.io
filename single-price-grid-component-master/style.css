@@ -1,0 +1,131 @@
+:root {
+  /* &Primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright__Yellow: hsl(71, 73%, 54%);
+
+  /*? Neutral */
+  --Light__Gray: hsl(204, 43%, 93%);
+  --Grayish__Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  overflow: scroll;
+}
+
+html {
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  background-color: #fafafafa;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 41rem;
+  background-color: aqua;
+  min-height: 25rem;
+  box-shadow: 1px 1px 6px 4px #e7e6e6;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin: 1rem;
+  transition: .2s all ease-in;
+
+  &:hover{
+    box-shadow: 1px 1px 8px 8px #e7e6e6;
+  }
+}
+
+.container__childs{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.first__child{
+    min-width: 100%;
+    background-color: #ffffff;
+    min-height: 17rem;
+}
+
+.another__child{
+    min-width: 20rem;
+    min-height: 17rem;
+    background-color: #2bb3b1;
+
+    &:last-child{
+        background-color: #4abebd;
+    }
+}
+
+.container__title{
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--Cyan);
+}
+
+.container__description{
+    color: var(--Bright__Yellow);
+}
+
+.container__paragraph{
+    color: var(--Light__Gray);
+}
+
+.first__paragraph{
+    color: var(--Grayish__Blue);
+}
+
+.container__title2{
+    color: var(--Light__Gray);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.container__price{
+    color: hsla(216, 10%, 90%, 0.685);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+}
+
+.container__dollar{
+    color: var(--Light__Gray);
+    font-weight: 700;
+    font-size: 29px;
+}
+
+.container__sing-up{
+    background-color: var(--Bright__Yellow);
+    padding: .7rem 1rem;
+    border-radius: .3rem;
+    box-shadow: 1px 1px 5px .5px #808080;
+    color: var(--Light__Gray);
+    font-weight: 700;
+    transition: .2s all ease-in;
+
+    &:hover{
+        background-color: hsla(71, 73%, 54%, 0.856);
+        color: hsl(202, 33%, 95%);
+    }
+}
