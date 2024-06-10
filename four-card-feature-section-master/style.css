@@ -1,0 +1,156 @@
+:root{
+  /* ?Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* *Neutral */
+  --Very__Dark__Blue: hsl(234, 12%, 34%);
+  --Grayish__Blue: hsl(229, 6%, 66%);
+  --Very__Light__Gray: hsl(0, 0%, 98%);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    opacity: 1;
+    visibility: visible;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--Very__Light__Gray);
+}
+
+.header{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10rem;
+  max-width: 36rem;
+}
+
+.header__title{
+  font-weight: 200;
+  color: var(--Very__Dark__Blue);
+}
+
+.header__title__blod{
+  font-weight: 600
+}
+
+.header__paragraph{
+  text-align: center;
+  color: var(--Grayish__Blue);
+}
+
+.main{
+  display: flex;
+  flex-grow: 1;
+  margin-top: 3rem;
+}
+
+.main__cards__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__cards{
+  width: 23rem;
+  min-width: 23rem;
+  min-height: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 .8rem;
+
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 5px 19px rgb(206, 223, 255);
+  transition: .3s ease-in;
+
+  &:first-child{
+    border-top: 3px solid var(--Cyan);
+  }
+
+  &:last-child{
+    border-top: 3px solid var(--Blue);
+  }
+
+  &:hover{
+    box-shadow: 0px 5px 21px rgb(119, 166, 255);
+  }
+
+  @media (max-width: 500px) {
+
+    &:first-child{
+      margin-top: 2rem;
+    }
+  
+    &:last-child{
+      margin-top: 2rem;
+    }
+  }
+}
+
+.main__cards__container__modificator{
+  min-height: 31.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top__color__modificator{
+  &:first-child{
+    border-top: 3px solid var(--Red);
+  }
+
+  &:last-child{
+    border-top: 3px solid var(--Orange);
+  }
+}
+
+.main__cards__title{
+  align-self: flex-start;
+  color: var(--Very__Dark__Blue);
+  font-weight: 600;
+}
+
+.main__cards__paragraph{
+  color: var(--Grayish__Blue);
+}
+
+.main__cards__image{
+  align-self: flex-end;
+}
+
+footer{
+  margin-top: 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
