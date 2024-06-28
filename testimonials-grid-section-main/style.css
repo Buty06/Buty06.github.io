@@ -1,0 +1,145 @@
+:root {
+  --Moderate__violet: hsl(263, 55%, 52%);
+  --Very__dark__grayish__blue: hsl(217, 19%, 35%);
+  --Very__dark__blackish__blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light__gray: hsl(0, 0%, 81%);
+  --Light__grayish__blue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+html {
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--Light__grayish__blue);
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: clamp(30%, 80%, 63rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+  gap: 1rem;
+  transition: 2s ease;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
+
+.container__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  background-color: blueviolet;
+}
+
+.card1 {
+  grid-area: card1;
+
+  color: var(--White);
+  background: url(./images/bg-pattern-quotation.svg) no-repeat;
+  background-color: var(--Moderate__violet);
+  background-position: top right 4rem;
+  transition: 2s ease;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    background-position: top right 2rem;
+  }
+}
+
+.card2 {
+  grid-area: card2;
+
+  background-color: var(--Very__dark__grayish__blue);
+  color: var(--White);
+}
+
+.card3 {
+  grid-area: card3;
+
+  background: var(--White);
+  color: var(--Very__dark__blackish__blue);
+}
+
+.card4 {
+  grid-area: card4;
+
+  background-color: var(--Very__dark__blackish__blue);
+  color: var(--White);
+}
+
+.card5 {
+  grid-area: card5;
+
+  background-color: var(--White);
+  color: var(--Very__dark__blackish__blue);
+}
+
+.cards__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.cards__header__avatar {
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 2rem;
+}
+
+.header__title__verify{
+    opacity: .5;
+}
+
+.cards__top__paragraph {
+  margin-bottom: 1rem;
+  font-size: 19px;
+}
+
+.cards__bottom__paragraph {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
