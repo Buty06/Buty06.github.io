@@ -1,0 +1,236 @@
+:root {
+  --Pale__Blue: hsl(243, 100%, 93%);
+  --Grayish__Blue: hsl(229, 7%, 55%);
+  --Dark__Blue: hsl(228, 56%, 26%);
+  --Very__Dark__Blue: hsl(229, 57%, 11%);
+
+  --Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(./images/bg-desktop.png) bottom/100% 50vh no-repeat
+    var(--Very__Dark__Blue);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
+.main__sect__1 {
+  background-color: var(--Dark__Blue);
+  max-width: 21rem;
+  min-width: 21rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 10px 90px 10px 10px;
+}
+
+.main__sect1__image__logo {
+  width: 9rem;
+}
+
+.main__sect1__container__images {
+  display: flex;
+}
+
+.main__sect1__box__images {
+  width: 3.2rem;
+  height: 3rem;
+  padding: 0.8rem;
+  background-color: var(--Very__Dark__Blue);
+  margin-right: 1rem;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    background-color: hsl(228, 55%, 16%);
+  }
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+}
+
+.main__sect2 {
+  background-color: var(--Dark__Blue);
+  display: flex;
+  flex-direction: column;
+  min-width: 34rem;
+  height: 9rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  color: var(--Pale__Blue);
+  position: relative;
+}
+
+.sect2__paragraph__span,
+.main__sect2__gigas {
+  font-weight: 700;
+}
+
+.main__sect2__container__gigas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__sect2__counter {
+  background: var(--Very__Dark__Blue);
+  width: 95%;
+  height: 1.2rem;
+  padding: 0.2rem;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.main__sect2__counter__gradial {
+  background: linear-gradient(to right, var(--Gradient)) left/100% no-repeat;
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+.main__sect2__counter__ball {
+  background-color: var(--Pale__Blue);
+  width: 2.5%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.main__sect2__number {
+  position: absolute;
+  background-color: white;
+  color: var(--Very__Dark__Blue);
+  top: -2.5rem;
+  right: 2.5rem;
+  width: 10rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 10px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-top: 1.5rem solid white;
+  }
+}
+
+.main__sect2__number__paragraph {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__sect2__number__paragraph__span {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.5;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 798px) {
+  body {
+    background: url(./images/bg-mobile.png) center/100% 100% no-repeat;
+  }
+
+  .main {
+    row-gap: 1rem;
+  }
+
+  .main__sect__1 {
+    min-width: 22rem;
+  }
+
+  .main__sect2 {
+    min-width: 22rem;
+    height: 11rem;
+  }
+
+  .main__sect2__counter {
+    width: 100%;
+  }
+
+  .main__sect2__paragraph {
+    text-align: center;
+    width: 100%;
+  }
+
+  .main__sect2__counter {
+    height: 1.5rem;
+  }
+
+  .main__sect2__counter__ball {
+    width: 1rem;
+  }
+
+  .main__sect2__number {
+    top: 9.1rem;
+    right: 6.9rem;
+    border-radius: 10px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
