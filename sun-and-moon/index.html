@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Buty | Form-Css" />
+    <meta
+      property="og:description"
+      content="Trying to create a form with CSS only"
+    />
+
+    <title>Sun and Moon</title>
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <p class="sun__paragraph" id="sun__paragraph">Toca el sol</p>
+    <p class="moon__paragraph noone" id="moon__paragraph">Toca la luna</p>
+
+    <div class="container">
+      <div class="sun" id="sun"></div>
+      <div class="moon noone" id="moon">
+        <div class="crater crater1"></div>
+        <div class="crater crater2"></div>
+        <div class="crater crater3"></div>
+        <div class="crater crater4"></div>
+        <div class="crater crater5"></div>
+      </div>
+      <button class="touch" id="touch"></button>
+    </div>
+
+    <noscript>Active Javascript en el navegador para que funcione</noscript>
+    <script src="./script.js"></script>
+  </body>
+</html>

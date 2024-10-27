@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  font-family: Arial, Helvetica, sans-serif;padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-weight: 400;
+  font-style: normal;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+html{
+    opacity: 1;
+    visibility: visible;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(255, 255, 191);
+    transition: 1s ease-in;
+}
+
+.bg_dark_body{
+    background-color: rgb(39, 39, 39);
+}
+
+.sun__paragraph{
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px gray;
+    position: fixed;
+    top: 3rem;
+}
+
+.sun{
+    width: 18rem;
+    height: 18rem;
+    background: repeating-radial-gradient(yellow, orange);
+    border-radius: 50%;
+    animation: sunAnimation 3s infinite;
+}
+
+@keyframes sunAnimation {
+    0%{
+        box-shadow: 0px 0px 20px 0px orange;
+    }
+
+    50%{
+        box-shadow: 0px 0px 20px 20px orange;
+    }
+
+    100%{
+        box-shadow: 0px 0px 20px 0px orange;
+    }
+}
+
+.moon__paragraph{
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px rgb(233, 233, 233);
+    color: rgb(230, 230, 230);
+    position: fixed;
+    top: 3rem;
+}
+
+.moon{
+    width: 17rem;
+    height: 17rem;
+    background: repeating-radial-gradient(white, gray);
+    border-radius: 50%;
+    position: relative;
+    animation: moonAnimation 3s infinite;
+}
+
+.crater{
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(gray,80% , black);
+    z-index: 10;
+    border-radius: 10px 20px 7px 10px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 5px gray;
+}
+
+.crater1{
+    left:35%;
+    top: 20%;
+}
+
+.crater2{
+    left:70%;
+    top: 40%;
+    border-radius: 50%;
+}
+
+.crater3{
+    left:55%;
+    top: 70%;
+    border-radius: 10px 20px/20px;
+}
+
+.crater4{
+    left:10%;
+    top: 50%;
+    border-radius: 10px 70px/20px 30px;
+}
+
+.crater5{
+    left:50%;
+    top: 50%;
+    border-radius: 100px 500px/200px 300px;
+}
+
+@keyframes moonAnimation {
+    0%{
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+
+    50%{
+        box-shadow: 0px 0px 20px 20px gray;
+    }
+
+    100%{
+        box-shadow: 0px 0px 20px 0px gray;
+    }
+}
+
+.noone{
+    display: none;
+}
+
+.container{
+    overflow: visible;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.touch{
+    background-color: transparent;
+    width: 17rem;
+    height: 17rem;
+    position: fixed;
+    border-radius: 50%;
+}

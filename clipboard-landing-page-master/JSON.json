@@ -1,0 +1,31 @@
+{
+  "details": "Detalles",
+  "dinoGameA11yAriaLabel": "Juego del dinosaurio, jugar",
+  "dinoGameA11yDescription": "Juego del dinosaurio. Un dinosaurio pixelado esquiva cactus y pterodáctilos mientras corre por un paisaje desolado. Cuando escuches la señal, presiona la barra espaciadora para saltar los obstáculos.",
+  "dinoGameA11yGameOver": "Terminó el juego, tu puntuación es $1.",
+  "dinoGameA11yHighScore": "Tu puntuación más alta es $1.",
+  "dinoGameA11yJump": "¡Salta!",
+  "dinoGameA11ySpeedToggle": "Empezar más despacio",
+  "dinoGameA11yStartGame": "Comenzó el juego.",
+  "errorCode": "ERR_INTERNET_DISCONNECTED",
+  "fontfamily": "\"sans\", Arial, sans-serif",
+  "fontfamilyMd": "Roboto, \"sans\", Arial, sans-serif",
+  "fontsize": "75%",
+  "heading": { "hostName": "www.google.com", "msg": "Sin Internet" },
+  "hideDetails": "Ocultar detalles",
+  "iconClass": "icon-offline",
+  "language": "es",
+  "suggestionsDetails": [],
+  "suggestionsSummaryList": [
+    { "summary": "Comprobar los cables de red, el módem y el router" },
+    { "summary": "Volver a conectarte a Wi-Fi" }
+  ],
+  "suggestionsSummaryListHeader": "Intenta:",
+  "summary": {
+    "failedUrl": "https://www.google.com/search?q=g&oq=g&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEJMTExM2owajE1qAIIsAIB&sourceid=chrome&ie=UTF-8",
+    "hostName": "www.google.com",
+    "msg": "Sin Internet"
+  },
+  "textdirection": "ltr",
+  "title": "www.google.com"
+}
