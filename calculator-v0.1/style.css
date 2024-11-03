@@ -44,6 +44,7 @@ body {
   font-size: 2rem;
   text-align: end;
   padding: 10px;
+  resize: none;
 }
 
 .calculator_buttons {
