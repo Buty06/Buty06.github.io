@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A calculator practice page" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <meta property="og:title" content="Claculator" />
+    <meta property="og:description" content="A calculator practice page" />
+    <meta
+      property="og:image"
+      content="https://help.apple.com/assets/66EB2D93D8C3BD635E04A0A9/66EB2D97D8C3BD635E04A0AF/en_US/5250122ee560cee90b3d7cfa2d91695e.png"
+    />
+    <meta property="og:image:alt" content="Example image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=backspace"
+    />
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 24;
+      }
+
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Claculator</title>
+  </head>
+  <body>
+    <div class="calculator_container">
+      <textarea id="input" class="input" readonly></textarea>
+
+      <div class="calculator_buttons">
+        <button class="button1" id="button1">1</button>
+        <button class="button2" id="button2">2</button>
+        <button class="button3" id="button3">3</button>
+        <button class="button4" id="button4">4</button>
+        <button class="button5" id="button5">5</button>
+        <button class="button6" id="button6">6</button>
+        <button class="button7" id="button7">7</button>
+        <button class="button8" id="button8">8</button>
+        <button class="button9" id="button9">9</button>
+        <button class="button0" id="button0">0</button>
+
+        <button class="operator_suma" id="operator_suma">+</button>
+
+        <button class="operator_resta" id="operator_resta">-</button>
+
+        <button class="operator_multiplicacion" id="operator_multiplicacion">
+          x
+        </button>
+
+        <button class="operator_divicion" id="operator_divicion">/</button>
+
+        <button class="operator_eliminador" id="operator_eliminador">AC</button>
+
+        <button class="operator_resultado" id="operator_resultado">=</button>
+
+        <button class="operator_modulo" id="operator_modulo">%</button>
+
+        <button class="operator_punto" id="operator_punto">.</button>
+
+        <button class="operator_backspace" id="operator_backspace">
+          <span class="material-symbols-outlined"> backspace </span>
+        </button>
+      </div>
+    </div>
+
+    <noscript>Activa Javascript en el navegador</noscript>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+*::after,
+*::before,
+* {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
+body {
+  background-color: rgb(176, 218, 218);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator_container {
+  background-color: rgb(112, 175, 175);
+  height: 30rem;
+  width: 20rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 6rem 1fr;
+  gap: 1.5rem;
+  border: 2px solid black;
+  box-shadow: 7px 7px 10px rgb(94, 94, 94);
+}
+
+.input {
+  background-color: white;
+  font-size: 2rem;
+  text-align: end;
+  padding: 10px;
+}
+
+.calculator_buttons {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    "operator_eliminador operator_backspace operator_modulo operator_divicion"
+    "button7 button8 button9 operator_multiplicacion"
+    "button4 button5 button6 operator_resta"
+    "button1 button2 button3 operator_suma"
+    "button0 button0 operator_punto operator_resultado";
+  gap: 0.3rem;
+  padding: 0.2rem;
+}
+
+button{
+    background-color: rgb(167, 167, 167);
+    font-size: 2rem;
+    transition: .5s ease;
+    border: 1px solid black;
+
+    &:hover{
+    background-color: rgb(94, 94, 94);
+    }
+}
+
+.button1 {
+  grid-area: button1;
+}
+
+.button2 {
+  grid-area: button2;
+}
+
+.button3 {
+  grid-area: button3;
+}
+
+.button4 {
+  grid-area: button4;
+}
+
+.button5 {
+  grid-area: button5;
+}
+
+.button6 {
+  grid-area: button6;
+}
+
+.button7 {
+  grid-area: button7;
+}
+
+.button8 {
+  grid-area: button8;
+}
+
+.button9 {
+  grid-area: button9;
+}
+
+.button0 {
+  grid-area: button0;
+}
+
+.operator_suma{
+    grid-area: operator_suma;
+}
+
+.operator_resta{
+    grid-area: operator_resta;
+}
+
+.operator_multiplicacion{
+    grid-area: operator_multiplicacion;
+}
+
+.operator_divicion{
+    grid-area: operator_divicion;
+}
+
+.operator_eliminador{
+    grid-area: operator_eliminador;
+}
+
+.operator_resultado{
+    grid-area: operator_resultado;
+}
+
+.operator_modulo{
+    grid-area: operator_modulo;
+}
+
+.operator_punto{
+    grid-area: operator_punto;
+}
+
+.operator_backspace{
+    grid-area: operator_backspace;
+}

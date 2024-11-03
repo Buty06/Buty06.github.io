@@ -1,0 +1,166 @@
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(0, 153, 153);
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-areas:
+    "card1 card2 card3"
+    ". . card4"
+    ". . card5"
+    ". . .";
+}
+
+.activate{
+  animation: rotate .5s infinite;
+}
+
+.cards {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgb(231, 231, 231);
+  background-color: rgb(0, 54, 54);
+  padding: 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  justify-self: center;
+}
+
+#card1 {
+  grid-area: card1;
+  background-color: brown;
+}
+
+#card2 {
+  background-color:yellowgreen;
+  grid-area: card2;
+}
+
+#card3 {
+  background-color:tomato;
+  grid-area: card3;
+}
+
+#card4 {
+  background-color:blue;
+  grid-area: card4;
+}
+
+#card5 {
+  background-color: chocolate;
+  grid-area: card5;
+}
+
+@keyframes rotate {
+  5% {
+    grid-template-areas:
+      "card2 card3 card4"
+      "card1 . card5"
+      ". . ."
+      ". . .";
+  }
+
+  12% {
+    grid-template-areas:
+      "card3 card4 card5"
+      "card2 . ."
+      "card1 . ."
+      ". . .";
+  }
+
+  24% {
+    grid-template-areas:
+      "card4 card5 ."
+      "card3 . ."
+      "card2 . ."
+      "card1 . .";
+  }
+
+  36% {
+    grid-template-areas:
+      "card5 . ."
+      "card4 . ."
+      "card3 . ."
+      "card2 card1 .";
+  }
+
+  48% {
+    grid-template-areas:
+      ". . ."
+      "card5 . ."
+      "card4 . ."
+      "card3 card2 card1";
+  }
+
+  60% {
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "card5 . card1"
+      "card4 card3 card2";
+  }
+
+  72% {
+    grid-template-areas:
+      ". . ."
+      ". . card1"
+      ". . card2"
+      "card5 card4 card3";
+  }
+
+  83% {
+    grid-template-areas:
+      ". . card1"
+      ". . card2"
+      ". . card3"
+      ". card5 card4";
+  }
+
+  94% {
+    grid-template-areas:
+      ". card1 card2"
+      ". . card3"
+      ". . card4"
+      ". . card5";
+  }
+
+  100% {
+    grid-template-areas:
+      "card1 card2 card3"
+      ". . card4"
+      ". . card5"
+      ". . .";
+  }
+}
+
+#activate{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  background-color: white;
+
+  &:hover{
+    transition: .5s ease;
+    background-color: rgb(148, 148, 148);
+  }
+}
+
+#activate img {
+  width: 100%;
+  height: 100%;
+}
