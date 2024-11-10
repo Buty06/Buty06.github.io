@@ -62,15 +62,16 @@ body {
   padding: 0.2rem;
 }
 
-button{
-    background-color: rgb(167, 167, 167);
-    font-size: 2rem;
-    transition: .5s ease;
-    border: 1px solid black;
+button {
+  background-color: rgb(167, 167, 167);
+  font-size: 2rem;
+  transition: 0.5s ease;
+  border: 1px solid black;
+  cursor: pointer;
 
-    &:hover{
+  &:hover {
     background-color: rgb(94, 94, 94);
-    }
+  }
 }
 
 .button1 {
@@ -113,38 +114,38 @@ button{
   grid-area: button0;
 }
 
-.operator_suma{
-    grid-area: operator_suma;
+.operator_suma {
+  grid-area: operator_suma;
 }
 
-.operator_resta{
-    grid-area: operator_resta;
+.operator_resta {
+  grid-area: operator_resta;
 }
 
-.operator_multiplicacion{
-    grid-area: operator_multiplicacion;
+.operator_multiplicacion {
+  grid-area: operator_multiplicacion;
 }
 
-.operator_divicion{
-    grid-area: operator_divicion;
+.operator_divicion {
+  grid-area: operator_divicion;
 }
 
-.operator_eliminador{
-    grid-area: operator_eliminador;
+.operator_eliminador {
+  grid-area: operator_eliminador;
 }
 
-.operator_resultado{
-    grid-area: operator_resultado;
+.operator_resultado {
+  grid-area: operator_resultado;
 }
 
-.operator_modulo{
-    grid-area: operator_modulo;
+.operator_modulo {
+  grid-area: operator_modulo;
 }
 
-.operator_punto{
-    grid-area: operator_punto;
+.operator_punto {
+  grid-area: operator_punto;
 }
 
-.operator_backspace{
-    grid-area: operator_backspace;
+.operator_backspace {
+  grid-area: operator_backspace;
 }

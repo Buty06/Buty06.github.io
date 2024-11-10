@@ -1,3 +1,4 @@
+//?Creamos una instancia de todos los elementos a utilizar
 const doc = document;
 const $button1 = doc.getElementById("button1");
 const $button2 = doc.getElementById("button2");
@@ -9,7 +10,6 @@ const $button7 = doc.getElementById("button7");
 const $button8 = doc.getElementById("button8");
 const $button9 = doc.getElementById("button9");
 const $button0 = doc.getElementById("button0");
-
 const $operator_suma = doc.getElementById("operator_suma");
 const $operator_resta = doc.getElementById("operator_resta");
 const $operator_multiplicacion = doc.getElementById("operator_multiplicacion");
@@ -21,6 +21,7 @@ const $operator_punto = doc.getElementById("operator_punto");
 const $operator_backspace = doc.getElementById("operator_backspace");
 const $input = doc.getElementById("input");
 
+//?Cremos las funciones principales de aritmetica
 const suma = (item = "") => {
   const microItem = item.split(" ");
   return parseFloat(microItem[0]) + parseFloat(microItem[2]);
@@ -43,9 +44,10 @@ const division = (item = "") => {
 
 const modulo = (item = "") => {
   const microItem = item.split(" ");
-  return parseFloat(microItem[0]) % parseFloat(microItem[2]);
+  return parseFloat(microItem[0]) * (parseFloat(microItem[2]) / 100);
 };
 
+//?Mostramos en pantalla para que el usuario divise mejor
 $button1.addEventListener("click", () => {
   $input.value += 1;
 });
@@ -84,6 +86,16 @@ $button9.addEventListener("click", () => {
 
 $button0.addEventListener("click", () => {
   $input.value += 0;
+  const regExp = /[^0]/g;
+
+  //? En esta expresion se evaluan expresiones regulares para regular la cantidad de ceros en el input
+  if ($input.value.match(/0/g).length > 1 && !regExp.test($input.value)) {
+    $input.value = $input.value.slice(0, -1);
+  }
+
+  //!El metodo match te ayuda a saber si en una cadena contiene un numero indefinido del mismo caracter
+  // let mama = 'mamamam'
+  // console.log(mama.match(/m/g))
 });
 
 $operator_punto.addEventListener("click", () => {
@@ -118,6 +130,7 @@ $operator_eliminador.addEventListener("click", () => {
   $input.value = "";
 });
 
+//?Se lleva a cabo el resultado haciendo una extrapolacion del input y resolviendo la operacion aritmetica
 $operator_resultado.addEventListener("click", () => {
   let microValue = $input.value;
 
