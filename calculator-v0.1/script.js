@@ -24,27 +24,29 @@ const $input = doc.getElementById("input");
 //?Cremos las funciones principales de aritmetica
 const suma = (item = "") => {
   const microItem = item.split(" ");
-  return parseFloat(microItem[0]) + parseFloat(microItem[2]);
+  return (parseFloat(microItem[0]) + parseFloat(microItem[2])).toFixed(2);
 };
 
 const resta = (item = "") => {
   const microItem = item.split(" ");
-  return parseFloat(microItem[0]) - parseFloat(microItem[2]);
+  return (parseFloat(microItem[0]) - parseFloat(microItem[2])).toFixed(2);
 };
 
 const multiplicacion = (item = "") => {
   const microItem = item.split(" ");
-  return parseFloat(microItem[0]) * parseFloat(microItem[2]);
+  return (parseFloat(microItem[0]) * parseFloat(microItem[2])).toFixed(2);
 };
 
 const division = (item = "") => {
   const microItem = item.split(" ");
-  return parseFloat(microItem[0]) / parseFloat(microItem[2]);
+  return (parseFloat(microItem[0]) / parseFloat(microItem[2])).toFixed(2);
 };
 
 const modulo = (item = "") => {
   const microItem = item.split(" ");
-  return parseFloat(microItem[0]) * (parseFloat(microItem[2]) / 100);
+  return (parseFloat(microItem[0]) * (parseFloat(microItem[2]) / 100)).toFixed(
+    2
+  );
 };
 
 //?Mostramos en pantalla para que el usuario divise mejor
